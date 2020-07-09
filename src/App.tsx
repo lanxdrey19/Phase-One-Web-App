@@ -1,11 +1,14 @@
 import React from 'react';
 import './App.css';
-import SearchBar from './Components/SearchBarComponent/SearchBar';
+import { Button } from '@material-ui/core';
+import MainPage from './MainPage';
+
+
 
 function App() {
   return (
     <div>
-      <SearchBar/>
+        <MainPage/>
     </div>
   );
 }

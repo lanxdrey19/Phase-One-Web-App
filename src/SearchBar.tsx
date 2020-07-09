@@ -9,8 +9,13 @@ const [searchEntry , setSearchEntry] = useState('');
 
     return (
       <div className="searchBarContainer">
-          <h1>{searchEntry}</h1>
-          <Grid container spacing={1}>
+          <h1 className='title'>Pokemon Search</h1>
+          <Grid
+            container
+            direction="row"
+            justify="center"
+            alignItems="center"
+          >
           <Grid item xs={4} sm={2}>
           <form className='searchField' noValidate autoComplete="off">
            

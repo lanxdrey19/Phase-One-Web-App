@@ -6,12 +6,12 @@
 trigger:
 - master
 
+variables:
+  rootDir: 'my-app'
+  buildDir: '$(rootDir)/build'
+
 pool:
   vmImage: 'ubuntu-latest'
-
-variables:
-  rootDir: 'Phase-One-Web-App'
-  buildDir: '$(rootDir)/build'
 
 steps:
 - task: NodeTool@0
@@ -25,13 +25,15 @@ steps:
     npm run build
     cd ..
   displayName: 'npm install and build'
+
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(BuildDir)'
+    rootFolderOrFile: '$(buildDir)'
     includeRootFolder: false
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     replaceExistingArchive: true
+
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'

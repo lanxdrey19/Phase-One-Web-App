@@ -30,7 +30,8 @@ const retrievePokemon = async (query : any) => {
             stats={currentPokemon.stats}
             types={currentPokemon.types}
             id={currentPokemon.id}/>
-          ) : <div className="errorMsg">The Pokemon was not found. Please try again...</div> } 
+          ) : <div className="errorMsg">Please wait... 
+          <br></br> If this is taking too long, it means the Pokemon was not found. Please refine your search...</div> } 
       </div>
     );
   }

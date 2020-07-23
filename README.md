@@ -1,3 +1,12 @@
+Installed Node.js
+ran npm install and build
+Archived files
+Published Build Artefacts
+
+Creates releases when commits are made in master and develop branches but only deploys releases when commits are made in the master branch only
+
+https://msa-devops-2020-lance.azurewebsites.net/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

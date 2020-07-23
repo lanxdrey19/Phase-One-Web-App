@@ -7,7 +7,7 @@ trigger:
 - master
 
 variables:
-  rootDir: 'devops101'
+  rootDir: 'src'
   buildDir: '$(rootDir)/build'
 
 pool:

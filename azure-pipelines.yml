@@ -9,6 +9,10 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
+variables:
+  rootDir: 'Phase-One-Web-App'
+  buildDir: '$(rootDir)/build'
+
 steps:
 - task: NodeTool@0
   inputs:

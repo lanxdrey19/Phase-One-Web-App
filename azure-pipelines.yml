@@ -7,7 +7,7 @@ trigger:
 - master
 
 variables:
-  rootDir: 'src'
+  rootDir: 'Phase-One-Web-App'
   buildDir: '$(rootDir)/build'
 
 pool:
